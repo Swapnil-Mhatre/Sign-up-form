@@ -18,6 +18,7 @@ html, body {
 .container {
     display: flex;
     height: 100vh;
+    overflow: hidden;
 }
 
 .image-div {
