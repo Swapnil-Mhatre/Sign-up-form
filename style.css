@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Norse-bold, sans-serif;
+    font-family: sans-serif;
 }
 
 html, body {
@@ -15,3 +15,131 @@ html, body {
     src: url(./Norse-Bold.woff);
 }
 
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.image-div {
+    position: relative;
+    width: 30%;
+}
+
+.image-div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    top: 30%;
+    background-color: rgb(0, 0, 0, 0.5);
+    color: white;
+    padding: 12px 0;
+}
+
+.logo img {
+    height: 120px;
+}
+
+.logo h1 {
+    font-family: Norse-bold;
+    font-size: 5rem;
+    margin-left: 5px;
+}
+
+.content {
+    background-color: #F9FAFB;
+    width: 70%;
+    /* align-items: center; */
+}
+
+.text-content {
+    padding: 10px 40px;
+    padding-right: 27%;
+}
+
+.text-content p,
+legend {
+    font-size: 24px;
+    font-weight: 600;
+    color: #070707;
+    margin-bottom: 30px;
+}
+
+.form-element {
+    background-color: #fff;
+    box-shadow: 1px 3px 10px rgb(0, 0, 0, 0.2);
+    padding: 40px;
+    padding-right: 30%;
+}
+
+.form-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+label {
+    display: block;
+    text-transform: uppercase;
+    color: #191919;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+input {
+    padding: 5px 10px;
+    width: 300px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+    outline: none;
+}
+
+input:focus {
+    border: 1px solid blue;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.2);
+}
+
+.input:invalid {
+    border: 1px solid red;
+}
+
+.left-el p {
+    margin-top: -15px;
+    color: red;
+    font-size: 14px;
+}
+
+.account {
+    padding: 40px;
+}
+
+.account button {
+    background-color: #596D48;
+    color: #F9FAFB;
+    padding: 15px 50px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+}
+
+.account p {
+    margin-top: 40px;
+    font-size: 18px;
+}
+
+.account a {
+    text-decoration: none;
+    color: #596D48;
+    font-weight: 600;
+}
